@@ -1,4 +1,4 @@
- zepto_sql_project
+ZEPTO_SQL_PROJECT
 
  Project Overview
 
