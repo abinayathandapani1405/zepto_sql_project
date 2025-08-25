@@ -76,6 +76,12 @@ Checked missing/invalid values.
 
 15.Find the second most expensive product in each category.
 
+📬 Contact
+
+📧 Email: thandapaniabinaya@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/abinaya-thandapani-4037642a3/
+
 
 
 
