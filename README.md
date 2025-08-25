@@ -20,3 +20,5 @@ discountedSellingPrice — Final selling price after discount
 availableQuantity — Current stock available
 quantity — Ordered quantity
 outOfStock — Availability status
+
+
