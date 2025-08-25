@@ -44,54 +44,40 @@ Checked missing/invalid values.
 
 3. Analysis Queries
 
-Key insights extracted:
+🔎 Analysis Questions
 
-Show all products
+1.Show all products with their details.
 
-select * from zepto_v1;
+2.Display product names and their categories.
 
+3.Find all products where outOfStock = True.
 
-Find out-of-stock products
+4.Retrieve the top 5 most expensive products based on MRP.
 
-select * from zepto_v1 where outofstock = 'True';
+5.List products that have more than 20% discount.
 
+6.Find all products in the “Fruits & Vegetables” category.
 
-Top 5 most expensive products
+7.Show the average discount percent for each category.
 
-select * from zepto_v1 order by mrp desc limit 5;
+8.Find the product(s) with the maximum available quantity in each category.
 
+9.Show the difference between MRP and discounted selling price for each product.
 
-Products with >20% discount
+10.Count how many products are marked outOfStock = False.
 
-select name, category, discountpercent 
-from zepto_v1 
-where discountpercent > 20;
+11.Find products that have the same MRP but different discount percentages.
 
+12.Rank products in each category by MRP (highest to lowest).
 
-Category-wise average discount
+13.Display products where ordered quantity > availableQuantity.
 
-select category, avg(discountpercent) as average_discount
-from zepto_v1
-group by category;
+14.Find products with the same name but belonging to different categories.
 
-
-Rank products by MRP within each category
-
-select name, category, mrp,
-rank() over (partition by category order by mrp desc) as mrp_rank
-from zepto_v1;
+15.Find the second most expensive product in each category.
 
 
-Second most expensive product in each category
-
-select name, category, mrp 
-from (
-  select name, category, mrp,
-  rank() over(partition by category order by mrp desc) as mrp_rank
-  from zepto_v1
-) temp
-where mrp_rank = 2;
 
 
-...and many more (total 15+) queries covering duplicates, price differences, and stock analysis.
+
 
