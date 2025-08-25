@@ -12,6 +12,7 @@ Table Name: zepto_v1
 Source: Imported from CSV/SQL dump
 
 Columns:
+
 name — Product name
 
 category — Product category
